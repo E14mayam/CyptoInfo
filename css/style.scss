@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-stack:"Poppins";
+$main-font: "Neue Machina";
+$primary-color : #DDDDDD;
+$secondary-color:#06113C;
+$tetiary-color : #8F73FD;
+$alternate-color : #EEEEEE;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Neue Machina";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("../fonts/PPNeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Machina";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url("../fonts/PPNeueMachina-Ultrabold.otf") format("opentype");
+}
+
+@mixin link-general(){
+    color: $primary-color;
+    background-color: $secondary-color;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    align-items: center;
+    transition: 0.8s ease;
+    box-shadow: none;
+    margin: 2px;
+    display: inline-block;
+
+
+    &:hover{
+        box-shadow: 5px 5px $tetiary-color;
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
+
+    img{
+        width: 15px;
+    }
+}
+
+.main-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    section{
+        scroll-snap-align: start;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .intro{
+        overflow-x: hidden;  
+
+        #background {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            position: fixed;
+            top: 0;
+            z-index: -2; 
+            
+          }
+        header{
+            
+           h1{
+               color: $primary-color;
+               font-family: $main-font;
+               font-weight: bold;
+               span{
+                font-family: $main-font;
+                font-weight: bold; 
+               }
+           }
+
+           nav{
+               a{
+                   @include link-general();
+               }
+           }
+        }
+
+        .intro-text{
+           
+           color: $primary-color;
+           h1{
+               font-size: 50px;
+               font-family: $main-font;
+           }
+           a{
+               @include link-general();
+               margin: 10px;
+           }
+        }
+    }
+    .blockchain{
+        background-image: url("../images/backdrop/salvatore-andrea-santacroce-ubbEoQ2ey9I-unsplash.jpg");
+        background-size: cover;
+        align-items: center;
+        h1{
+            font-family: $main-font;
+            font-weight: bold;
+            color: $secondary-color;
+        }
+        p{
+            color: $primary-color;
+        }
+        .tech{
+            padding: 0px 300px;
+            .tech-content{
+                color: $primary-color;
+                width: 390px;
+                max-height: 400px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                 rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                border-radius: 20px;
+                h1{
+                    font-family: $main-font;
+                    font-size: 30px;
+                }
+                hr{
+                    border: 2px solid $secondary-color;
+                    width: 60px;
+                    margin: 5px auto;
+                }
+            }
+        }
+    }
+    .web3{
+        background-image: url("../images/backdrop/javier-miranda-fUOf_2t8vzQ-unsplash.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        align-items: center;
+        color: $primary-color;
+        h1{
+            color: $primary-color;
+            font-weight: bold;
+            font-family: $main-font;
+            margin-bottom: 20px;
+            text-decoration: overline;
+        }
+        p{
+            width: 70%;
+        }
+    }
+    .explore{
+        background-image: url("../images/backdrop/javier-miranda-MrWOCGKFVDg-unsplash.jpg");
+        background-size: cover;
+        align-items: center;
+        color: $primary-color;
+        .explore-text{
+            h1{
+                font-family: $main-font;
+                font-weight: bold
+            }
+            a{
+                @include link-general();
+            }
+        }
+        .connect{
+            .connect-items{
+                margin-top: 300px;
+                h5{
+                    font-weight: 600;
+                }
+                h5,p{
+                    font-size: 13px;
+                }
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .intro{
+        header{
+            h1{
+                font-size: 30px;
+                margin: 0 auto;
+            }
+            nav{
+                display: none;
+            }
+        }
+        .intro-text{
+            padding: 0px 0px 0px 0px;
+        }
+    }
+
+    .blockchain{
+        .tech{
+            padding: 0px 0px;
+            display: flex;
+            flex-direction: column;
+            .tech-content{
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .web3{
+        p{
+            width: 70%;
+            font-size: 13px;
+        }
+    }
+
+    .explore{
+        .explore-text{
+            h1{
+                font-size: 23px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+       
+        h5{
+            font-size: 11px;
+            p{
+                font-size: 11px;
+            }
+        }
+    }
+}
+

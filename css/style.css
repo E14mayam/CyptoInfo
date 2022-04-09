@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/PPNeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/PPNeueMachina-Ultrabold.otf") format("opentype");
+}
+
+.main-container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.main-container section {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main-container .intro {
+  overflow-x: hidden;
+}
+
+.main-container .intro #background {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  z-index: -2;
+}
+
+.main-container .intro header h1 {
+  color: #DDDDDD;
+  font-family: "Neue Machina";
+  font-weight: bold;
+}
+
+.main-container .intro header h1 span {
+  font-family: "Neue Machina";
+  font-weight: bold;
+}
+
+.main-container .intro header nav a {
+  color: #DDDDDD;
+  background-color: #06113C;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 2px;
+  display: inline-block;
+}
+
+.main-container .intro header nav a:hover {
+  -webkit-box-shadow: 5px 5px #8F73FD;
+          box-shadow: 5px 5px #8F73FD;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.main-container .intro header nav a img {
+  width: 15px;
+}
+
+.main-container .intro .intro-text {
+  color: #DDDDDD;
+}
+
+.main-container .intro .intro-text h1 {
+  font-size: 50px;
+  font-family: "Neue Machina";
+}
+
+.main-container .intro .intro-text a {
+  color: #DDDDDD;
+  background-color: #06113C;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 2px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.main-container .intro .intro-text a:hover {
+  -webkit-box-shadow: 5px 5px #8F73FD;
+          box-shadow: 5px 5px #8F73FD;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.main-container .intro .intro-text a img {
+  width: 15px;
+}
+
+.main-container .blockchain {
+  background-image: url("../images/backdrop/salvatore-andrea-santacroce-ubbEoQ2ey9I-unsplash.jpg");
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .blockchain h1 {
+  font-family: "Neue Machina";
+  font-weight: bold;
+  color: #06113C;
+}
+
+.main-container .blockchain p {
+  color: #DDDDDD;
+}
+
+.main-container .blockchain .tech {
+  padding: 0px 300px;
+}
+
+.main-container .blockchain .tech .tech-content {
+  color: #DDDDDD;
+  width: 390px;
+  max-height: 400px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+}
+
+.main-container .blockchain .tech .tech-content h1 {
+  font-family: "Neue Machina";
+  font-size: 30px;
+}
+
+.main-container .blockchain .tech .tech-content hr {
+  border: 2px solid #06113C;
+  width: 60px;
+  margin: 5px auto;
+}
+
+.main-container .web3 {
+  background-image: url("../images/backdrop/javier-miranda-fUOf_2t8vzQ-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #DDDDDD;
+}
+
+.main-container .web3 h1 {
+  color: #DDDDDD;
+  font-weight: bold;
+  font-family: "Neue Machina";
+  margin-bottom: 20px;
+  text-decoration: overline;
+}
+
+.main-container .web3 p {
+  width: 70%;
+}
+
+.main-container .explore {
+  background-image: url("../images/backdrop/javier-miranda-MrWOCGKFVDg-unsplash.jpg");
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #DDDDDD;
+}
+
+.main-container .explore .explore-text h1 {
+  font-family: "Neue Machina";
+  font-weight: bold;
+}
+
+.main-container .explore .explore-text a {
+  color: #DDDDDD;
+  background-color: #06113C;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 2px;
+  display: inline-block;
+}
+
+.main-container .explore .explore-text a:hover {
+  -webkit-box-shadow: 5px 5px #8F73FD;
+          box-shadow: 5px 5px #8F73FD;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.main-container .explore .explore-text a img {
+  width: 15px;
+}
+
+.main-container .explore .connect .connect-items {
+  margin-top: 300px;
+}
+
+.main-container .explore .connect .connect-items h5 {
+  font-weight: 600;
+}
+
+.main-container .explore .connect .connect-items h5, .main-container .explore .connect .connect-items p {
+  font-size: 13px;
+}
+
+.main-container .explore .connect .connect-items img {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .intro header h1 {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .intro header nav {
+    display: none;
+  }
+  .intro .intro-text {
+    padding: 0px 0px 0px 0px;
+  }
+  .blockchain .tech {
+    padding: 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blockchain .tech .tech-content p {
+    font-size: 10px;
+  }
+  .web3 p {
+    width: 70%;
+    font-size: 13px;
+  }
+  .explore .explore-text h1 {
+    font-size: 23px;
+  }
+  .explore .explore-text p {
+    font-size: 15px;
+  }
+  .explore h5 {
+    font-size: 11px;
+  }
+  .explore h5 p {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
