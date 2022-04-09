@@ -174,7 +174,7 @@ $alternate-color: #eeeeee;
       .connect-items {
         margin-top: 300px;
         h5 {
-          font-weight: 600;
+          font-family: $main-font;
         }
         h5,
         p {
@@ -233,12 +233,16 @@ $alternate-color: #eeeeee;
         font-size: 15px;
       }
     }
-
-    h5 {
-      font-size: 11px;
-      p {
-        font-size: 11px;
+    connect{
+      .connect-items{
+        h5 {
+          font-size: 8px;
+          p {
+            font-size: 11px;
+          }
+        }
       }
     }
+   
   }
 }

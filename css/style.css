@@ -246,7 +246,7 @@
 }
 
 .main-container .explore .connect .connect-items h5 {
-  font-weight: 600;
+  font-family: "Neue Machina";
 }
 
 .main-container .explore .connect .connect-items h5,
@@ -292,10 +292,10 @@
   .explore .explore-text p {
     font-size: 15px;
   }
-  .explore h5 {
-    font-size: 11px;
+  .explore connect .connect-items h5 {
+    font-size: 8px;
   }
-  .explore h5 p {
+  .explore connect .connect-items h5 p {
     font-size: 11px;
   }
 }
