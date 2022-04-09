@@ -52,7 +52,7 @@
 }
 
 .main-container .intro header h1 {
-  color: #DDDDDD;
+  color: #dddddd;
   font-family: "Neue Machina";
   font-weight: bold;
 }
@@ -63,8 +63,8 @@
 }
 
 .main-container .intro header nav a {
-  color: #DDDDDD;
-  background-color: #06113C;
+  color: #dddddd;
+  background-color: #06113c;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 20px;
@@ -80,8 +80,8 @@
 }
 
 .main-container .intro header nav a:hover {
-  -webkit-box-shadow: 5px 5px #8F73FD;
-          box-shadow: 5px 5px #8F73FD;
+  -webkit-box-shadow: 5px 5px #8f73fd;
+          box-shadow: 5px 5px #8f73fd;
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
   -webkit-transform: translateY(-5px);
@@ -93,7 +93,7 @@
 }
 
 .main-container .intro .intro-text {
-  color: #DDDDDD;
+  color: #dddddd;
 }
 
 .main-container .intro .intro-text h1 {
@@ -102,8 +102,8 @@
 }
 
 .main-container .intro .intro-text a {
-  color: #DDDDDD;
-  background-color: #06113C;
+  color: #dddddd;
+  background-color: #06113c;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 20px;
@@ -120,8 +120,8 @@
 }
 
 .main-container .intro .intro-text a:hover {
-  -webkit-box-shadow: 5px 5px #8F73FD;
-          box-shadow: 5px 5px #8F73FD;
+  -webkit-box-shadow: 5px 5px #8f73fd;
+          box-shadow: 5px 5px #8f73fd;
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
   -webkit-transform: translateY(-5px);
@@ -143,11 +143,11 @@
 .main-container .blockchain h1 {
   font-family: "Neue Machina";
   font-weight: bold;
-  color: #06113C;
+  color: #06113c;
 }
 
 .main-container .blockchain p {
-  color: #DDDDDD;
+  color: #dddddd;
 }
 
 .main-container .blockchain .tech {
@@ -155,7 +155,7 @@
 }
 
 .main-container .blockchain .tech .tech-content {
-  color: #DDDDDD;
+  color: #dddddd;
   width: 390px;
   max-height: 400px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -169,7 +169,7 @@
 }
 
 .main-container .blockchain .tech .tech-content hr {
-  border: 2px solid #06113C;
+  border: 2px solid #06113c;
   width: 60px;
   margin: 5px auto;
 }
@@ -182,11 +182,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #DDDDDD;
+  color: #dddddd;
 }
 
 .main-container .web3 h1 {
-  color: #DDDDDD;
+  color: #dddddd;
   font-weight: bold;
   font-family: "Neue Machina";
   margin-bottom: 20px;
@@ -203,7 +203,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #DDDDDD;
+  color: #dddddd;
 }
 
 .main-container .explore .explore-text h1 {
@@ -212,8 +212,8 @@
 }
 
 .main-container .explore .explore-text a {
-  color: #DDDDDD;
-  background-color: #06113C;
+  color: #dddddd;
+  background-color: #06113c;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 20px;
@@ -229,8 +229,8 @@
 }
 
 .main-container .explore .explore-text a:hover {
-  -webkit-box-shadow: 5px 5px #8F73FD;
-          box-shadow: 5px 5px #8F73FD;
+  -webkit-box-shadow: 5px 5px #8f73fd;
+          box-shadow: 5px 5px #8f73fd;
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
   -webkit-transform: translateY(-5px);
@@ -249,7 +249,8 @@
   font-weight: 600;
 }
 
-.main-container .explore .connect .connect-items h5, .main-container .explore .connect .connect-items p {
+.main-container .explore .connect .connect-items h5,
+.main-container .explore .connect .connect-items p {
   font-size: 13px;
 }
 
